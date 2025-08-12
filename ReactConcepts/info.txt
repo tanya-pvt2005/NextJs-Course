@@ -1,0 +1,11 @@
+React has 3 core concepts
+1. Components - simple
+2. Props - to pass some different text
+3. State
+
+#PROPS: (short for properties) is basically an argument that we can pass to react components (like passing arguments to function)
+
+****Note: In React, data flows down the component tree. This is referred to as one-way data flow. State, which will be discussed in the next chapter, can be passed from parent to child components as props.
+
+Iterating through lists
+can use array methods to manipulate data and generate UI elements that are identical in style but hold different pieces of information.

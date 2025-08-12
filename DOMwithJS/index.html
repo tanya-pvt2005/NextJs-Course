@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type= "text/javascript">
+        const app = document.getElementById('app')
+        //create new element h1
+        const header = document.createElement('h1')
+        //create new textnode for h1
+        const text = "Develope Preview Ship"
+        const headerContent = document.createTextNode(text)
+        //append the textNode to h1
+        header.appendChild(headerContent)
+
+        //place h1 element inside div - app
+        app.appendChild(header)
+    </script>
+</body>
+</html>
