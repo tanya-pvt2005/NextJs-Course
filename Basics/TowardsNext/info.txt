@@ -1,0 +1,22 @@
+While react builds UI perfectly, it does take some work to independantly build UI into fully functioning scalable applications
+
+React is a Javascript library to build UI components, manage their state etc. But it is not that great at GIVING BUILDING BLOCKS FOR A WEB APPLICATION
+
+Building blocks of a web application
+1. UI 
+2. Routing
+3. Data Fetching
+4. Rendering
+5. Integration with 3rd party apps
+6. Infrastructure
+7. Performance
+8. Developer Experience
+
+Next is a React Framework that gives building blocks to create web application
+
+Package-lock.json gives detailed information about exact versions of each Package
+
+*********
+Next.js uses file-system routing i.e. instead of using code to define routes of application, we use folders and files
+
+A new file called layout.js was automatically created inside the app folder. This is the main layout of your application. You can use it to add UI elements that are shared across all pages (e.g. navigation, footer, etc).
