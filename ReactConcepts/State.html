@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- adding babel so that browser understands jsx -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+
+        function Header(props){
+            return <h1>{props.title}</h1>
+        }
+
+        
+        function HomePage(){
+            
+            function handle(){
+            console.log("Increment like count")
+            setLikes(likes+1)
+            }
+            //useState() hook
+            const [likes, setLikes] = React.useState(0);
+          
+
+            const names = ['Tanya Upadhyay','Sehaj Kundra', 'Nitasha Padda']
+            return (
+                 <div>
+                    <Header title="Develop. Preview. Ship." />
+                    <ul>
+                        {names.map((name) => (
+                        <li key={name}>{name}</li>
+                        ))}
+                    </ul>
+                    <button onClick = {handle}>Likes : {likes}</button>
+                </div>
+            )
+        }
+        const domNode = document.getElementById("app")
+        const root = ReactDOM.createRoot(domNode)
+        root.render(<HomePage/>)
+
+    </script>
+</body>
+
+</html>

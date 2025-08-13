@@ -9,3 +9,10 @@ React has 3 core concepts
 
 Iterating through lists
 can use array methods to manipulate data and generate UI elements that are identical in style but hold different pieces of information.
+
+#UseState hook in react
+useState hook is used to change the state of the componenets. It returns an array of exactly 2 elements -> value and a setter function. You can set the initial value of the variable inside parenthesis
+
+const[likes, setLikes] = React.useState(0)
+
+*****Note: Unlike props which are passed to components as the first function parameter, the state is initiated and stored within a component. You can pass the state information to children components as props, but the logic for updating the state should be kept within the component where state was initially created.
